@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Nobile:400italic,700italic");
+
+html,body{
+  overflow: hidden;
+  background-color: #9eceff;
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 10px; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dab5fe; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dab5fe; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dab5fe; 
+}
+::-webkit-scrollbar-button{
+  width: 5px;
+}
+
+
+.card{
+  position: relative;
+  width: 27%;
+  height: 78vh;
+  border: 10px solid #000;
+  margin: 60px auto 20px auto;
+  box-shadow: inset 10px 0px 15px 0px rgba(0,0,0,0.1);
+  background-color: #dab5fe;
+  
+}
+.card .container{
+  width: 80%;
+  height: 98%;
+  margin: auto;
+  overflow: scroll;
+}
+
+
+/* .strikethrough{
+  text-decoration: line-through;
+} */
+.card .container #head{
+  font-family: 'Nobile', sans-serif;
+  font-size: 1.5vw;
+  margin: 20px auto -11px auto;
+  color: #000;
+  font-weight: 700;
+}
+.card p{
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Nobile';
+  color: #0926e3;
+  font-style: italic;
+  text-align: center;
+  margin: 25px auto 0px auto;
+}
+h4{
+   font-size: 1vw;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Nobile';
+  color: #0926e3;
+  font-style: italic;
+  /* text-align: center; */
+  /* margin: 30px auto 0px auto; */
+}
+.card .front{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: -10px 0px 0px -10px;
+  border: 10px solid #000;
+  backface-visibility: hidden;
+  background-color: #dab5fe;
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transform: perspective(800px) rotateY(0deg);
+  transition: all .8s ease-in-out;
+}
+.newcard .front{
+  transform: perspective(800px) rotateY(-170deg);
+  background-color: #ecf0f1;
+}
+
+/* .card:hover .front{
+  transform: perspective(800px) rotateY(-170deg);
+  background-color: #ecf0f1;
+} */
+
+.card .front img, .card .back img{
+  width: 90%;
+  height: 95%;
+}
+.card .back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: -10px 0px 0px -10px;
+  border: 10px solid #000;
+  backface-visibility: visible;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transition: all 0.8s ease-in-out;
+  background-color: #ecf0f1;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1);
+}
+.back img{
+  height: 70vh;
+  }
+.newcard .back{
+  transform: perspective(800px) rotateY(-170deg);
+  box-shadow: 7px 0px 5px 0px rgba(0,0,0,0.3),
+              inset 2px 0px 15px 0px rgba(0,0,0,0.1);
+  background-color: #dab5fe;
+}
+
+/* .card:hover .back{
+  transform: perspective(800px) rotateY(-170deg);
+  box-shadow: 7px 0px 5px 0px rgba(0,0,0,0.3),
+              inset 2px 0px 15px 0px rgba(0,0,0,0.1);
+  background-color: #dab5fe;
+} */
+
+audio{
+    display: none;
+}
+
+#btn{
+  display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+}
+
+#btn button{
+  border: none;
+  background-color: #ff1c60;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1vw;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  z-index: 1;
+}
+
+/* ////////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+html, body {
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10vw;
+  background-color: #ddf0e9;
+}
+
+body {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* h1, h2 {
+  text-align: center;
+  margin: 0; 
+  font-family: 'Sen', sans-serif;
+} */
+
+#confetti{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
